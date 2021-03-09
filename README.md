@@ -1,6 +1,7 @@
-# Prestaexpress by Calaverita.tech
+# Posada Las Marites
+## Aplicación web progresiva
 
-## Build Setup
+### Build Setup
 
 ``` bash
 # install dependencies
