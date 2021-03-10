@@ -1,14 +1,12 @@
 <template>
   <v-main>
-    <TheHeader />
-    <TheBottomNavigationMenu />
+    <img src="@/assets/images/room-4.jpg" />
   </v-main>
 </template>
 
 <script>
 export default {
   components: {
-    TheHeader: () => import("@/components/TheHeader"),
     TheBottomNavigationMenu: () =>
       import("@/components/TheBottomNavigationMenu"),
   },
@@ -19,4 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img {
+  width: 100vw;
+}
 </style>

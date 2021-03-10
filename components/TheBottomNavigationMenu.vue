@@ -1,20 +1,25 @@
 <template>
   <div id="TheBottomNavigationMenu">
-    <v-btn text fab>
-      <HomeSvg fill="orange" />
-    </v-btn>
-    <v-btn text fab>
-      <BellSvg />
-    </v-btn>
-    <v-btn fab color="primary" class="center-button">
-      <ReceptionBellSvg fill="white" />
-    </v-btn>
-    <v-btn text fab>
-      <BellSvg />
-    </v-btn>
-    <v-btn text fab>
-      <BellSvg />
-    </v-btn>
+    <template v-if="isAuth">
+      <v-btn text fab>
+        <HomeSvg fill="orange" />
+      </v-btn>
+      <v-btn text fab>
+        <BellSvg />
+      </v-btn>
+      <v-btn fab color="primary" class="center-button">
+        <ReceptionBellSvg fill="white" />
+      </v-btn>
+      <v-btn text fab>
+        <BellSvg />
+      </v-btn>
+      <v-btn text fab>
+        <BellSvg />
+      </v-btn>
+    </template>
+    <template v-else>
+      <div class="booking-btn">Reserva ahora</div>
+    </template>
   </div>
 </template>
 
@@ -25,6 +30,11 @@ export default {
     HomeSvg: () => import("@/components/svgs/HomeSvg"),
     BellSvg: () => import("@/components/svgs/BellSvg"),
     ReceptionBellSvg: () => import("@/components/svgs/ReceptionBellSvg"),
+  },
+  computed: {
+    isAuth() {
+      return false;
+    },
   },
 };
 </script>
@@ -46,6 +56,14 @@ export default {
   .center-button {
     top: -25px;
     border-radius: 50% !important;
+  }
+  // bookig-btn
+  .booking-btn {
+    color: var(--v-secondary-base);
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
   }
 }
 </style>

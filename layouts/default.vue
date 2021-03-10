@@ -1,14 +1,14 @@
 <template>
   <v-app id="app">
     <nuxt />
+    <AuthDialog />
   </v-app>
 </template>
 
 <script>
 export default {
   components: {
-    TheNavbar: () => import("./components/TheNavbar"),
-    TheFooter: () => import("./components/TheFooter"),
+    AuthDialog: () => import("@/components/AuthDialog"),
   },
 };
 </script>

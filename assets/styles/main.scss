@@ -3,9 +3,9 @@
 @import './theme/fonts';
 @import './theme/layout';
 
-.v-btn {
-  border-radius: 20px !important;
-}
 
 
 // shadow
+.v-btn {
+  text-transform: none !important;
+}
