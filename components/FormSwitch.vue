@@ -1,16 +1,21 @@
 <template>
-  <div id="FormSwitch" :class="{ active: active }">
-    <div @click="active = true" class="opt login-opt">Ingresar</div>
-    <div @click="active = false" class="opt register-opt">Registrase</div>
+  <div id="FormSwitch" :class="{ active: value }">
+    <div @click="$emit('input', true)" class="opt login-opt">Ingresar</div>
+    <div @click="$emit('input', false)" class="opt register-opt">
+      Registrase
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "FormSwitch",
-  data: () => ({
-    active: true,
-  }),
+  props: {
+    value: {
+      type: Boolean,
+      required: true,
+    },
+  },
 };
 </script>
 

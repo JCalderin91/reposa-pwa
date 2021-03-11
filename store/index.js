@@ -3,12 +3,11 @@
   State managment for load
 */
 
-// Constant to reset this state information.
-const initialState = () => ({})
 
 // State object.
-const state = initialState
-
+const state = () => ({
+  isAuthDialog: false,
+})
 // Getter functions.
 const getters = {}
 
@@ -16,7 +15,11 @@ const getters = {}
 const actions = {}
 
 // Mutations
-const mutations = {}
+const mutations = {
+  toggleAuthDialog: (state) => {
+    state.isAuthDialog = !state.isAuthDialog
+  }
+}
 
 export default {
   state,

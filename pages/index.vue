@@ -1,10 +1,12 @@
 <template>
   <v-main>
     <img src="@/assets/images/room-4.jpg" />
+    <v-btn @click="toggleAuthDialog">Ingresar</v-btn>
   </v-main>
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   components: {
     TheBottomNavigationMenu: () =>
@@ -12,6 +14,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    ...mapMutations({
+      toggleAuthDialog: "toggleAuthDialog",
+    }),
   },
 };
 </script>
