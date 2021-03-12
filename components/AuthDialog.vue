@@ -3,7 +3,7 @@
     <div class="background" @click="toggleAuthDialog" />
     <div class="form-wrapper">
       <div class="title-text">Bienvenido</div>
-      <div class="selector mt-4 mb-10">
+      <div class="selector mt-2 mb-6">
         <FormSwitch v-model="isLogin" />
       </div>
       <LoginForm v-if="isLogin" />
@@ -61,7 +61,7 @@ export default {
     left: 0;
     bottom: -100vh;
     width: 100vw;
-    padding: 2.5rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 0.5rem 2rem;
     border-radius: 40px 40px 0 0;
     transition: all 0.3s cubic-bezier(0.21, 0.43, 0.56, 1.08);
     .title-text {

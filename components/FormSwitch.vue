@@ -50,9 +50,12 @@ export default {
     z-index: 1;
     transition: all 0.3s ease-in-out;
     text-align: center;
-
     &.register-opt {
       color: $white;
+      cursor: default;
+    }
+    &.login-opt {
+      cursor: pointer;
     }
   }
   &.active {
@@ -63,9 +66,11 @@ export default {
     .opt {
       &.login-opt {
         color: $white;
+        cursor: default;
       }
       &.register-opt {
         color: $black;
+        cursor: pointer;
       }
     }
   }

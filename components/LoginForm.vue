@@ -23,7 +23,9 @@
     <div class="login-with-text">O ingresa con</div>
 
     <div class="more-login-methods">
-      <v-btn elevation="2" fab small> <v-icon>mdi-google</v-icon></v-btn>
+      <v-btn elevation="2" fab small>
+        <img src="@/assets/svgs/google.svg" height="28" width="28" alt="" />
+      </v-btn>
     </div>
   </div>
 </template>
@@ -45,12 +47,12 @@ export default {
     height: 2px;
     background-color: #d9d9d9;
     width: calc(100% - 2rem);
-    margin: 1.5rem 1rem;
+    margin: 0.8rem 1rem 0.5rem 1rem;
   }
   .login-with-text {
     text-align: center;
     font-size: 14px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
   .more-login-methods {
     display: flex;

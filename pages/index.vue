@@ -1,7 +1,7 @@
 <template>
   <v-main>
-    <img src="@/assets/images/room-4.jpg" />
-    <v-btn @click="toggleAuthDialog">Ingresar</v-btn>
+    <TheHero />
+    <TheFooter />
   </v-main>
 </template>
 
@@ -9,8 +9,8 @@
 import { mapMutations } from "vuex";
 export default {
   components: {
-    TheBottomNavigationMenu: () =>
-      import("@/components/TheBottomNavigationMenu"),
+    TheHero: () => import("@/components/landing/TheHero"),
+    TheFooter: () => import("@/components/landing/TheFooter"),
   },
   data() {
     return {};

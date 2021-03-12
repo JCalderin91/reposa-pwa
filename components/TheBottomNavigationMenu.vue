@@ -45,8 +45,8 @@ export default {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 74px;
-  background-color: rgb(252, 252, 252);
+  height: 55px;
+  background-color: $white;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
@@ -59,8 +59,8 @@ export default {
   }
   // bookig-btn
   .booking-btn {
-    color: var(--v-secondary-base);
-    font-size: 23px;
+    color: $secondary;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     width: 100%;

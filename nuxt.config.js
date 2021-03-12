@@ -99,8 +99,8 @@ export default {
     "start_url": "/",
     "display": "standalone",
     "lang": "es",
-    "theme_color": "#0f089f",
-    "background_color": "#ff2e00",
+    "theme_color": "#d96c07",
+    "background_color": "#009688",
     "orientation": "portrait-primary",
     "icons": [{
         "src": "/icons/icon-64x64.png",
